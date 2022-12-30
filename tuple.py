@@ -1,4 +1,4 @@
-x = tuple(range(1,8))
+x = tuple(range(1,12))
 print(x)
 
 print("#########for loop####################")
