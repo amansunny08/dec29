@@ -7,7 +7,7 @@ user = {
 print("############In keyword && If condition#################")
 
 if 'ages' in user:
-    print(f"{'age'} is present" )
+    print(f"{'ages'} is present" )
 else: 
     print(f"{'age'} is not present")
 
