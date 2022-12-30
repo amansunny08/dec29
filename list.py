@@ -1,4 +1,4 @@
-x = list(range(1,8))
+x = list(range(1,12))
 
 print("##########Complete list###################")
 print(x)

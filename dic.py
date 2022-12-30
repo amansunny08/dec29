@@ -6,10 +6,10 @@ user = {
 
 print("############In keyword && If condition#################")
 
-if 'ages' in user:
-    print(f"{'ages'} is present" )
+if 'name' in user:
+    print(f"{'name'} is present" )
 else: 
-    print(f"{'age'} is not present")
+    print(f"{'name'} is not present")
 
 print("##########for loop###### full list#############")
 
