@@ -3,7 +3,7 @@ x = list(range(1,11))
 print("##########Complete list###################")
 print(x)
 
-print("########## for loop###################")
+print("########## for loop################")
 for i in x:
     print(i)
 
@@ -15,6 +15,8 @@ else:
 
 print("############append list#################")
 
+x.append("orange")
+x.append("kiwi")
 x.append("apple")
 x.append("mango")
 print(x)
