@@ -16,7 +16,7 @@ else:
 print("############append list#################")
 
 x.append("apple")
-x.append("kiwi")
+x.append("mango")
 print(x)
 
 print("##########append list inside list###################")
