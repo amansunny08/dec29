@@ -25,7 +25,7 @@ jobs:
          - name: run tuple script
            run: python3 tuple.py  
          - name: create demo file
-           run: echo " This is a demo file" > ${{ github.evet.inputs.abc}}
+           run: echo " This is a demo file" > ${{ github.event.inputs.abc}}
          - name: upload outpuut
            uses: actions/upload-artifact@v3
            with:
@@ -49,4 +49,4 @@ jobs:
          - name: read file
            run: |
               ls -lrt
-              cat demo.txt   
+              cat ${{ github.event.inputs.abc}}
