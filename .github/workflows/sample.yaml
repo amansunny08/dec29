@@ -4,6 +4,12 @@ on:
      branches:
        - "main"
    workflow_dispatch:
+      inputs:
+         abc: 
+            description: "Enter file name"
+            type: string
+            required: true
+            default: demo.txt
 jobs:
     first_job:
        runs-on: ubuntu-latest
@@ -19,7 +25,7 @@ jobs:
          - name: run tuple script
            run: python3 tuple.py  
          - name: create demo file
-           run: echo " This is a demo file" > demo.txt
+           run: echo " This is a demo file" > ${{ github.evet.inputs.abc}}
          - name: upload outpuut
            uses: actions/upload-artifact@v3
            with:
