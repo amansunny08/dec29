@@ -1,11 +1,5 @@
 name: for testing
-on: 
-   push:
-     branches:
-       - "main"
-   pull_request:
-     branches:
-       - "main"    
+on:     
    workflow_dispatch:
       inputs:
          abc: 
