@@ -1,4 +1,4 @@
-x = tuple(range(1,11))
+x = tuple(range(1,12))
 print(x)
 
 print("#########for loop####################")
@@ -11,4 +11,4 @@ else:
     print("5 is not present")    
 
 print("#############Count################")
-print(x.count(7))
+print(x.count(2))

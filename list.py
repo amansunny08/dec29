@@ -1,4 +1,4 @@
-x = list(range(1,11))
+x = list(range(1,12))
 
 print("##########Complete list###################")
 print(x)
@@ -28,7 +28,7 @@ x.append(y)
 print(x)
 
 print("##################Extend list###########")
-z = ['bus', 'car', 123]
+z = ['bus', 'car', 123, "van"]
 y.extend(z)
 
 print(y)
