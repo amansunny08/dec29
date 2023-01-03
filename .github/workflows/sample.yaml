@@ -18,6 +18,13 @@ jobs:
            continue-on-error: true
          - name: run tuple script
            run: python3 tuple.py  
+         - name: create demo file
+           run: echo " This is a demo file" > demo.txt
+         - name: upload outpuut
+           uses: actions/upload-artifact@v3
+           with:
+              name: myvol
+              path: demo.txt  
     second_job:
         # if: github.event_name == 'push'
         runs-on: ubuntu-latest
@@ -25,9 +32,15 @@ jobs:
         steps:
          - name: get code
            uses: actions/checkout@v3
-         - name: run dic script
-           run: python3 dic.py
-         - name: run list script
-           run: python3 list.py
          - name: run tuple script
            run: python3 tuple.py
+         - name: list file
+           run: ls-lrt
+         - name: download file
+           uses: actions/download-artifact@v3
+           with:
+             name: myvol
+         - name: read file
+           run: |
+              ls -lrt
+              cat demo.txt   
