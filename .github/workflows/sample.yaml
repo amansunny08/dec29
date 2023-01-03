@@ -13,7 +13,7 @@ jobs:
          - name: run dic script
            run: python3 dic.py
          - name: run list script
-           run: python3 list.py
+           run: python list.py
          - name: run tuple script
            run: python3 tuple.py  
     second_job:
