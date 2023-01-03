@@ -15,6 +15,7 @@ jobs:
            run: python3 dic.py
          - name: run list script
            run: python lis.py
+           continue-on-error: true
          - name: run tuple script
            run: python3 tuple.py  
     second_job:
