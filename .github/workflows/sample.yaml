@@ -17,7 +17,7 @@ jobs:
          - name: run tuple script
            run: python3 tuple.py  
     second_job:
-        if: github.event_name == 'push'
+        # if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps:
          - name: get code
