@@ -30,7 +30,7 @@ jobs:
            uses: actions/upload-artifact@v3
            with:
               name: myvol
-              path: demo.txt  
+              path: ${{ github.event.inputs.abc}} 
     second_job:
         # if: github.event_name == 'push'
         runs-on: ubuntu-latest
