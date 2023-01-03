@@ -35,7 +35,7 @@ jobs:
          - name: run tuple script
            run: python3 tuple.py
          - name: list file
-           run: ls-lrt
+           run: ls -lrt
          - name: download file
            uses: actions/download-artifact@v3
            with:
