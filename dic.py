@@ -8,7 +8,7 @@ print("############In keyword && If condition#################")
 
 if 'ages' in user:
     print(f"{'age'} is present" )
-else: 
+else
     print(f"{'age'} is not present")
 
 print("##########for loop###### full list#############")
